@@ -24,14 +24,16 @@
 </div>
 
 ## Abstract
+<div align="center">
 <div style="text-align:center">
 <img src="assets/fig1.jpg" width="80%" height="80%">
 </div>
 
-<div>
+<div align="left">
 <strong>In this paper, we introduce DCDepth, a novel framework for the long-standing monocular depth estimation task. Moving beyond conventional pixel-wise depth estimation in the spatial domain, our approach estimates the frequency coefficients of depth patches after transforming them into the discrete cosine domain. This unique formulation allows for the modeling of local depth correlations within each patch. Crucially, the frequency transformation segregates the depth information into various frequency components, with low-frequency components encapsulating the core scene structure and high-frequency components detailing the finer aspects. This decomposition forms the basis of our progressive strategy, which begins with the prediction of low-frequency components to establish a global scene context, followed by successive refinement of local details through the prediction of higher-frequency components. We conduct comprehensive experiments on NYU-Depth-V2, TOFDC, and KITTI datasets, and demonstrate the state-of-the-art performance of DCDepth. </strong>
 
 ---
+</div>
 </div>
 
 ## Environment
@@ -74,13 +76,15 @@ For example, to evaluate the model trained on the NYU-Depth-V2 dataset, use: `py
 
 ## Model Zoo
 
-We release the checkpoints that can reproduce the results reported in our paper. The first three error metrics of TOFDC are multiplied by 10 for presentation.
+We release the model checkpoints that can reproduce the results reported in our paper. The first three error metrics of TOFDC are multiplied by 10 for presentation.
+<div align="center">
 
 | Model                                                        | Abs Rel $\downarrow$ | Sq Rel $\downarrow$ | RMSE $\downarrow$ | $\delta_1$ $\uparrow$ | $\delta_2$ $\uparrow$ |
 | ------------------------------------------------------------ | -------------------- | ------------------- | ----------------- | --------------------- | --------------------- |
 | [NYU-Depth-V2](https://drive.google.com/file/d/1l9GALVE3qOsw4vZ2TiEOXS-T5at58cqv/view?usp=sharing) | 0.085                | 0.039               | 0.304             | 0.940                 | 0.992                 |
 | [TOFDC](https://drive.google.com/file/d/1eCNwHl19MZo4sEoWDjqBrhiKeTbP9ZQT/view?usp=sharing) | 0.188                | 0.027               | 0.565             | 0.995                 | 0.999                 |
 | [KITTI Eigen](https://drive.google.com/file/d/1rS_7WZTCZ9gF0v0mgornQHPQyKAcYA9t/view?usp=sharing) | 0.051                | 0.145               | 2.044             | 0.977                 | 0.997                 |
+</div>
 
 ## Citation
 
