@@ -1,0 +1,13 @@
+dataset:
+  name: 'kitti_eigen'
+  data_path: '/opt/data/common/KITTI_2018_depth'
+  data_path_eval: '/opt/data/common/KITTI_2018_depth'
+  input_width: 1216
+  input_height: 352
+  min_depth: 1.0
+  max_depth: 80.0
+
+evaluation:
+  do_kb_crop: true
+  garg_crop: true
+  eigen_crop: false

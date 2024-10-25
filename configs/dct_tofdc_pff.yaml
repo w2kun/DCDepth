@@ -1,0 +1,48 @@
+_base_: 'tofdc_base.yaml'
+
+
+training:
+  seed: 512
+  resume_from: null
+  work_dir: 'checkpoints'
+  max_epochs: 25
+  batch_size: 2
+  num_workers: 8
+  log_freq: 1024
+  accumulate_grad_batches: 1
+  precision: '32'
+
+  find_unused_parameters: false
+  gradient_clip_val: 1.0
+
+model:
+  type: 'DCTProg'
+
+  encoder: 'large12'
+  pretrain: '/kunw/Models/swin/swin_large_patch4_window12_384_22k.pth'
+
+  ape: false
+  drop_path_rate: 0.3
+  drop_path_rate_crf: 0.0
+  seq_dropout_rate: 0.3
+  output_space: 'log'
+
+loss:
+  variance_focus: 0.85
+  beta: 0.8
+  freq_reg_weight: 0.002
+  smooth_reg_weight: 0.0
+  min_valid_pixels: 0
+  square_root: true
+
+optimization:
+  max_lr: 1.0e-4
+  div_factor: 5.0
+  final_div_factor: 4.0
+  pct_start: 0.08
+  weight_decay: 0.0
+  lr_ratio: 4.0
+  anneal_strategy: 'cos'
+
+evaluation:
+  every_n_epochs: 1

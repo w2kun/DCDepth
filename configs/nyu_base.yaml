@@ -1,0 +1,13 @@
+dataset:
+  name: 'nyu'
+  data_path: '/opt/data/common/NYU_depth/sync'
+  data_path_eval: '/kunw/Dataset/NYU/official_splits/test'
+  input_width: 640
+  input_height: 480
+  min_depth: 0.1
+  max_depth: 10.0
+
+evaluation:
+  do_kb_crop: false
+  garg_crop: false
+  eigen_crop: true
