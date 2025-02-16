@@ -3,7 +3,7 @@
 <h1>DCDepth: Progressive Monocular Depth Estimation<br>in Discrete Cosine Domain</h1>
 
 <div>
-    <a href='https://scholar.google.com/citations?user=ORn7aZcAAAAJ&hl=zh-CN' target='_blank'>Kun Wang</a><sup>1</sup>&emsp;
+    <a href='https://w2kun.github.io' target='_blank'>Kun Wang</a><sup>1</sup>&emsp;
     <a href='https://yanzq95.github.io/' target='_blank'>Zhiqiang Yan</a><sup>1</sup>&emsp;
     <a href='https://fanjunkai1.github.io/' target='_blank'>Junkai Fan</a><sup>1</sup>&emsp;
     <a target='_blank'>Wanlu Zhu</a><sup>1</sup>&emsp;
