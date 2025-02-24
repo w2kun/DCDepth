@@ -91,11 +91,16 @@ We release the model checkpoints that can reproduce the results reported in our 
 If you find our work useful in your research, please consider citing our paper:
 
 ```
-@article{wang2024dcdepth,
-  title={DCDepth: Progressive Monocular Depth Estimation in Discrete Cosine Domain},
-  author={Wang, Kun and Yan, Zhiqiang and Fan, Junkai and Zhu, Wanlu and Li, Xiang and Li, Jun and Yang, Jian},
-  journal={arXiv preprint arXiv:2410.14980},
-  year={2024}
+@inproceedings{NEURIPS2024_76bea0a1,
+ author = {Wang, Kun and Yan, Zhiqiang and Fan, Junkai and Zhu, Wanlu and Li, Xiang and Li, Jun and Yang, Jian},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {A. Globerson and L. Mackey and D. Belgrave and A. Fan and U. Paquet and J. Tomczak and C. Zhang},
+ pages = {64629--64648},
+ publisher = {Curran Associates, Inc.},
+ title = {DCDepth: Progressive Monocular Depth Estimation in Discrete Cosine Domain},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2024/file/76bea0a1cf7bf9b78f842009f6de15a1-Paper-Conference.pdf},
+ volume = {37},
+ year = {2024}
 }
 ```
 
